@@ -91,6 +91,10 @@
     display: flex;
 }
 
+.menu-burger-button:active{
+    display: none;
+}
+
 .burger-icon {
     stroke: var(--primary-color);
 }
