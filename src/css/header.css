@@ -79,11 +79,11 @@
     border: none;
     padding: 0;
     display: flex;
+    ;
 }
-
-.menu-burger-button:checked + .burger-icon{
-    /* fill: red; */
-}
+/* .new-icon-class{
+    background-image: url(../images/icons/symbol-defs.svg#icon-align-justify);
+} */
 
 .burger-icon {
     stroke: var(--primary-color);
@@ -120,7 +120,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .container{
         width: 100%;
         padding: 0 60px;
