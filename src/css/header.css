@@ -81,12 +81,13 @@
     display: flex;
 }
 
-
+.header-menu.is-open + .menu-burger-button{
+    background-image: url(../images/icons/symbol-defs.svg#icon-close);
+}
 
 .burger-icon {
     stroke: var(--primary-color);
 }
-
 
 .menu-close-button {
     width: 24px;
@@ -150,6 +151,7 @@
         background-color: inherit;
         display: inline-flex;
         flex-direction: row;
+        align-self: center;
         gap: 30px;
         margin-top: 0;
     }
