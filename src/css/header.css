@@ -71,14 +71,6 @@
 }
 
 .mob-menu {
-    /* background-color: var(--white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 28px 32px;
-    z-index: 0; */
     
 }
 
@@ -91,9 +83,7 @@
     display: flex;
 }
 
-.menu-burger-button:active{
-    display: none;
-}
+
 
 .burger-icon {
     stroke: var(--primary-color);
@@ -106,13 +96,13 @@
     background-color: inherit;
     border: none;
     padding: 0;
-    display: flex;
+    display: flex ;
 }
 
 
 .close-icon {
     stroke: var(--primary-color);
-}
+} 
 
 
 @media screen and (min-width: 425px) {
