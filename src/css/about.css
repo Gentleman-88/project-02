@@ -1,54 +1,54 @@
 .about-section {
+  background-color: var(--light-blue);
+}
+
+.about-container {
   width: 100vw;
   max-width: 375px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
-.about-text-block {
-  padding: 64px 16px;
-  background-color: var(--light-blue);
+.about-content {
+  padding: 64px 0px;
 }
 
 .about-title {
   position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  padding-left: 50px;
-  margin-bottom: 30px;
 }
 
 .about-title::before {
   content: '';
   position: absolute;
+  left: 0;
+  top: 11.5px;
   width: 30px;
   height: 1px;
   background-color: var(--primary-color);
-  left: 0;
-  top: 11.5px;
 }
 
 .about-subtitle {
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.5;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
 .about-description {
-  line-height: 1.5;
   margin-bottom: 30px;
-}
-
-.about-list {
+  line-height: 1.5;
 }
 
 .about-item {
-  line-height: 1.5;
-  text-align: center;
   width: 170px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .about-item:not(:last-child) {
@@ -56,37 +56,33 @@
 }
 
 .about-item-achiv {
+  margin-bottom: 14px;
   font-size: 50px;
   text-transform: uppercase;
-  margin-bottom: 14px;
-}
-
-.about-item-sketch {
 }
 
 .about-img {
   width: 100vw;
   max-width: 375px;
   margin: 0 auto;
+  transform: translateX(-16px);
 }
 
 @media screen and (min-width: 768px) {
   .about-section {
+    background-color: #fff;
+  }
+
+  .about-container {
     width: 100%;
     max-width: 768px;
     padding: 0 32px;
-    margin: 0 auto;
   }
 
-  .about-text-block {
+  .about-content {
     padding: 36px 64px;
     margin-bottom: 30px;
-  }
-
-  .about-title {
-  }
-
-  .about-title::before {
+    background-color: var(--light-blue);
   }
 
   .about-subtitle {
@@ -111,9 +107,6 @@
     margin-bottom: 0;
   }
 
-  .about-item-achiv {
-  }
-
   .about-item-sketch {
     font-size: 18px;
   }
@@ -121,44 +114,27 @@
   .about-img {
     width: 100%;
     max-width: 704px;
+    transform: translateX(0);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .about-section {
+  .about-container {
     max-width: 1440px;
-    margin: 0 auto;
     padding: 0 60px;
+  }
+
+  .about-wrap {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .about-text-block {
+  .about-content {
     max-width: 760px;
-    padding: 35px 69px 35px;
-    margin-bottom: 0;
-    margin-right: 24px;
-  }
-
-  .about-title {
-  }
-
-  .about-title::before {
-  }
-
-  .about-subtitle {
-  }
-
-  .about-description {
-  }
-
-  .about-list {
-  }
-
-  .about-item {
-  }
-
-  .about-item:not(:last-child) {
+    padding: 35px 69px;
+    margin: 0 24px 0 0;
   }
 
   .about-item-achiv {
@@ -166,11 +142,7 @@
     margin-bottom: 23px;
   }
 
-  .about-item-sketch {
-  }
-
   .about-img {
-    width: 100%;
-    max-width: 536px;
+    width: 536px;
   }
 }
